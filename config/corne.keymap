@@ -163,29 +163,29 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp UNDER       &mmv MOVE_UP     &kp PAGE_UP    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN  &trans
-&trans  &kp PLUS   &kp DOLLAR             &kp PERCENT   &kp CARET             &kp ASTERISK    &mmv MOVE_DOWN   &trans         &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE  &trans
-&trans  &kp MINUS  &kp EXCLAMATION        &kp AT_SIGN   &kp POUND             &kp SLASH       &mmv MOVE_LEFT   &kp PAGE_DOWN  &trans          &kp LESS_THAN         &kp GREATER_THAN       &trans           &trans
-                   &kp C_BRIGHTNESS_AUTO  &trans        &trans                &trans          &mmv MOVE_RIGHT  &trans         &trans          &trans
-                                                                                              &mkp MB2
+&trans  &kp GRAVE  &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp UNDER       &mmv MOVE_UP     &kp PAGE_UP    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN  &trans
+&trans  &kp PLUS   &kp DOLLAR         &kp PERCENT   &kp CARET             &kp ASTERISK    &mmv MOVE_DOWN   &trans         &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE  &trans
+&trans  &kp MINUS  &kp EXCLAMATION    &kp AT_SIGN   &kp POUND             &kp SLASH       &mmv MOVE_LEFT   &kp PAGE_DOWN  &trans          &kp LESS_THAN         &kp GREATER_THAN       &trans           &trans
+                   &kp C_RANDOM_PLAY  &trans        &trans                &trans          &mmv MOVE_RIGHT  &trans         &trans          &trans
+                                                                                          &mkp MB2
             >;
 
             label = "SYMBOL";
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            sensor-bindings = <&inc_dec_kp C_FAST_FORWARD C_REWIND>;
         };
 
         L3 {
             display-name = "FUNC";
             bindings = <
-&trans  &trans      &kp F7      &kp F8  &kp F9  &kp F5      &mmv MOVE_UP     &trans  &kp F16  &kp F17  &kp F18  &trans  &trans
-&trans  &trans      &kp F4      &kp F5  &kp F6  &mkp MB4    &mmv MOVE_DOWN   &trans  &kp F13  &kp F14  &kp F15  &trans  &trans
-&trans  &sys_reset  &kp F1      &kp F2  &kp F3  &mkp MB5    &mmv MOVE_LEFT   &trans  &kp F10  &kp F11  &kp F12  &trans  &trans
-                    &kp C_MUTE  &trans  &trans  &trans      &mmv MOVE_RIGHT  &trans  &trans   &trans
-                                                            &mkp MCLK
+&trans  &trans      &kp F7                 &kp F8  &kp F9  &kp F5      &mmv MOVE_UP     &trans  &kp F16  &kp F17  &kp F18  &trans  &trans
+&trans  &trans      &kp F4                 &kp F5  &kp F6  &mkp MB4    &mmv MOVE_DOWN   &trans  &kp F13  &kp F14  &kp F15  &trans  &trans
+&trans  &sys_reset  &kp F1                 &kp F2  &kp F3  &mkp MB5    &mmv MOVE_LEFT   &trans  &kp F10  &kp F11  &kp F12  &trans  &trans
+                    &kp C_BRIGHTNESS_AUTO  &trans  &trans  &trans      &mmv MOVE_RIGHT  &trans  &trans   &trans
+                                                                       &mkp MCLK
             >;
 
             label = "FN";
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         L4 {
