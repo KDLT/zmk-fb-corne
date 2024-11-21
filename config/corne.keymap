@@ -13,6 +13,13 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
+&mt {
+    tapping-term-ms = <150>;
+    flavor = "tap-preferred";
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <125>;
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -77,7 +84,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        ALPHA {
             display-name = "QWERTY";
 
             // --------------------------------------------------------------------------------
@@ -88,10 +95,10 @@
             //                                                      enter
 
             bindings = <
-&trans  &kp Q           &kp W           &kp E             &kp R         &kp T          &kp UP_ARROW     &kp Y            &kp U         &kp I        &kp O       &kp P     &trans
-&td0    &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F   &kp G          &kp DOWN_ARROW   &mt RCTRL H      &mt RSHIFT J  &mt LALT K   &mt RGUI L  &kp SEMI  &trans
-&trans  &kp Z           &kp X           &kp C             &kp V         &kp B          &kp LEFT_ARROW   &kp N            &kp M         &kp COMMA    &kp DOT     &kp FSLH  &trans
-                        &kp SPACE       &lt 3 A           &lt 2 ESCAPE  &lt 1 SPACE    &kp RIGHT_ARROW  &lt 1 BACKSPACE  &lt 2 ENTER   &lt 4 EQUAL
+&trans  &kp Q           &kp W           &kp E             &kp R         &kp T          &kp UP_ARROW     &kp Y            &kp U        &kp I              &kp O           &kp P               &trans
+&td0    &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F   &kp G          &kp DOWN_ARROW   &kp H            &mt RCTRL J  &mt RIGHT_SHIFT K  &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &trans
+&trans  &kp Z           &kp X           &kp C             &kp V         &kp B          &kp LEFT_ARROW   &kp N            &kp M        &kp COMMA          &kp DOT         &kp FSLH            &trans
+                        &kp SPACE       &lt 3 A           &lt 2 ESCAPE  &lt 1 SPACE    &kp RIGHT_ARROW  &lt 1 BACKSPACE  &lt 2 ENTER  &lt 4 EQUAL
                                                                                        &kp ENTER
             >;
 
@@ -142,7 +149,7 @@
         };
 
         L3 {
-            display-name = "Fn";
+            display-name = "FUNC";
             bindings = <
 &trans  &trans      &kp F7      &kp F8  &kp F9  &kp F5      &mmv MOVE_UP     &trans  &kp F16  &kp F17  &kp F18  &trans  &trans
 &trans  &trans      &kp F4      &kp F5  &kp F6  &mkp MB4    &mmv MOVE_DOWN   &trans  &kp F13  &kp F14  &kp F15  &trans  &trans
