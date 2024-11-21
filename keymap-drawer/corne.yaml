@@ -40,14 +40,14 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - {t: A, h: FN}
+  - $$mdi:volume-off$$
+  - {t: '=', h: FN, s: +}
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - {t: '=', h: L4, s: +}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: L4}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -89,7 +89,7 @@ layers:
   - END
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-off$$
+  - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -138,7 +138,7 @@ layers:
   - '>'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BRIGHTNESS AUTO
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
