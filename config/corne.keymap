@@ -13,6 +13,12 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
+&lt {
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <150>;
+    tapping-term-ms = <180>;
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -28,7 +34,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -42,7 +48,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
