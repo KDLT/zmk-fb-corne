@@ -149,7 +149,7 @@ layers:
   - '&mkp MB2'
   FN:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
   - F7
   - F8
   - F9
